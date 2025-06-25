@@ -59,9 +59,11 @@ main.contenedor {
   margin: 10px 0;
 }
 
-.publicidad img {
-  max-width: 100%;
-  margin: 20px 0;
+.noticias-secundarias img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -99,9 +101,4 @@ footer {
     flex: 1;
   }
 
-  .publicidad {
-    flex: 1 100%;
-    text-align: center;
-  }
 }
-
