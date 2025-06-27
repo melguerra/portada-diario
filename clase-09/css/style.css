@@ -1,0 +1,149 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f4f4;
+  color: #222;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid #900;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3em;
+  color: darkred;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fecha {
+  font-size: 1em;
+  color: #777;
+}
+
+.menu {
+  margin-top: 10px;
+}
+
+.hamburguesa {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.navegacion {
+  display: none;
+}
+
+main.contenedor {
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2#saludo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #900;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1em;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.boton-contenedor {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1em;
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #700000;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .hamburguesa {
+    display: none;
+  }
+
+  .navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .columna {
+    width: 48%;
+  }
+
+  .boton-contenedor {
+    width: 100%;
+    grid-column: span 2;
+  }
+}
